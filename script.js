@@ -19,6 +19,20 @@ function handleLogin(event) {
     
     // Login hone ke baad button ka text 'Profile' kar dega
     document.getElementById('loginBtn').innerText = 'Profile';
+}// Wallet Modal ko open karne ke liye
+function openWalletModal() {
+    document.getElementById('walletModal').style.display = 'flex';
 }
+
+// Wallet Modal ko close karne ke liye
+function closeWalletModal() {
+    document.getElementById('walletModal').style.display = 'none';
+}
+
+// Withdrawal button par click karne ka action
+function handleWithdraw(method) {
+    alert(method + ' se nikaasi shuru karne ke liye kripya pehle apne tasks poore karein!');
+}
+
 
 
