@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikka App Clone</title>
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Navigation Bar (Top Menu) -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Aap yahan apna logo image laga sakte hain -->
+            <h2>SIKKA</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Wallet</a></li>
+            <li class="btn-login"><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- 2. Hero Section (Welcome Banner) -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Rozana Sikka Kamayein</h1>
+            <p>Aasan tasks poore karein aur jeetein dheron rewards.</p>
+            <button class="cta-btn">Shuru Karein</button>
+        </div>
+    </header>
+
+    <!-- 3. Task Section (Earning Cards) -->
+    <section class="task-section">
+        <h2>Aaj Ke Tasks</h2>
+        <div class="task-container">
+            
+            <!-- Card 1 -->
+            <div class="task-card">
+                <div class="task-icon">📱</div>
+                <h3>App Download Karein</h3>
+                <p>Nayi app install karein aur payein 50 Sikka.</p>
+                <button class="task-btn" onclick="completeTask('App Download')">Claim 50 Sikka</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="task-card">
+                <div class="task-icon">👁️</div>
+                <h3>Video Dekhein</h3>
+                <p>30 seconds ka video dekhein aur payein 20 Sikka.</p>
+                <button class="task-btn" onclick="completeTask('Video Watch')">Claim 20 Sikka</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="task-card">
+                <div class="task-icon">📝</div>
+                <h3>Survey Poora Karein</h3>
+                <p>Chota sa feedback form bharein aur payein 100 Sikka.</p>
+                <button class="task-btn" onclick="completeTask('Survey')">Claim 100 Sikka</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JS File Link -->
+    <script src="script.js"></script>
+</body>
+</html>
+
