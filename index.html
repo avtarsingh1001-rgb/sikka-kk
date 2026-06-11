@@ -66,6 +66,24 @@
 
     <!-- JS File Link -->
     <script src="script.js"></script>
+    <!-- Login Form Pop-up Modal -->
+    <div id="loginModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center;">
+        <div style="background: white; padding: 30px; border-radius: 15px; width: 85%; max-width: 360px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); position: relative; text-align: center;">
+            
+            <!-- Close Button -->
+            <span style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #aaa;" onclick="closeLoginModal()">&times;</span>
+            
+            <h2 style="color: #2c3e50; margin-bottom: 20px;">Sikka-Kk Login</h2>
+            
+            <form onsubmit="handleLogin(event)">
+                <input type="text" placeholder="Mobile Number / Email" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+                <input type="password" placeholder="Password" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+                <button type="submit" style="background: #2ecc71; color: white; border: none; padding: 12px; width: 100%; border-radius: 8px; font-weight: bold; font-size: 1rem; cursor: pointer;">Aage Badhein</button>
+            </form>
+            
+            <p style="margin-top: 15px; font-size: 0.9rem; color: #7f8c8d;">Naya account banana hai? <a href="#" style="color: #2ecc71; text-decoration: none; font-weight: bold;">Sign Up</a></p>
+        </div>
+    </div>
 </body>
 </html>
 
